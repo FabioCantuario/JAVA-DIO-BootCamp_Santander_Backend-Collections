@@ -8,7 +8,7 @@ public class AppBiblioteca {
 		
 		relLivro.adicionarLivro("Pequeno Principe", "F G Cantuario", 1980);
 		
-		System.out.println("O livro cadastro é: " + relLivro);
+		System.out.println("O livro cadastro é: " + relLivro.toString());
 
 	}
 
