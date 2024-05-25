@@ -26,27 +26,30 @@ public class CatalogoLivro {
 		}
 		return listaPorAutor;
 	}
-/*
-	public void pesquisarPorIntervaloAnos(int anoInicial, int anoFinal) {
-		for (Livro listaAno : listaLivro) {
-			if (anoInicial >= listaAno.getAnoPublicacao() && anoFinal <= listaAno.getAnoPublicacao()) {
-				System.out.println("Livro encontrado pelo Ano de Publicação");
-			} else {
-				System.out.println("Livro não encontrado pelo ano de Publicação");
+
+	public List<Livro> pesquisarPorIntervaloAnos(int anoInicial, int anoFinal) {
+		List<Livro> listaPorIntervaloAno = new ArrayList<>();
+		if (!listaLivro.isEmpty()) {
+			for (Livro listaAno : listaLivro) {
+				if (listaAno.getAnoPublicacao() >= anoInicial && listaAno.getAnoPublicacao() <= anoFinal) {
+					listaPorIntervaloAno.add(listaAno);
+				}
 			}
 		}
 
+		return listaPorIntervaloAno;
 	}
 
-	public void pesquisarPorTitulo(String titulo) {
-		for (Livro listaTitulo : listaLivro) {
-			if (titulo == listaTitulo.getTitulo()) {
-				System.out.println("Livro encontrado pelo Titulo.");
-			} else {
-				System.out.println("Livro não localizado pelo Titulo.");
+	public Livro pesquisarPorTitulo(String titulo) {
+		Livro listaPorTitulo = null;
+		if (!listaLivro.isEmpty()) {
+			for (Livro listaTitulo : listaLivro) {
+				if (listaTitulo.getTitulo().equalsIgnoreCase(titulo)) {
+					listaPorTitulo = listaTitulo;
+					break;
+				}
 			}
 		}
-
+		return listaPorTitulo;
 	}
-*/
 }
