@@ -1,4 +1,4 @@
-package calculo;
+package list.calculo;
 
 public class NumeroInteiro {
 

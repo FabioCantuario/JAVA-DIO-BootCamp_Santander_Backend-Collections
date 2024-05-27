@@ -1,4 +1,4 @@
-package cadastro;
+package list.cadastro;
 
 import java.util.ArrayList;
 import java.util.Collections;

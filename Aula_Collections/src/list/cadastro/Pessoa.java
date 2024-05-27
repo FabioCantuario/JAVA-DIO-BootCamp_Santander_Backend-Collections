@@ -1,4 +1,4 @@
-package cadastro;
+package list.cadastro;
 
 public class Pessoa implements Comparable<Pessoa> {
 

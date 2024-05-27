@@ -1,4 +1,4 @@
-package exercicios.ListaTarefas;
+package list.tarefas;
 
 public class PrincipalListaTarefa {
 
